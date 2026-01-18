@@ -1,0 +1,14 @@
+# OS and Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# Vivado/Simulation junk (Just in case someone runs it here)
+*.jou
+*.log
+*.pb
+*.wdb
+*.vcd
+/xsim.dir/
+/.Xil/
