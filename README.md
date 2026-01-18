@@ -49,6 +49,8 @@ Synthesized using **Vivado 2025.1** for device `xc7a35tcpg236-1`.
 
 *Analysis:* The low LUT utilization (0.5%) indicates massive room for scalability. The design efficiently maps arithmetic to the FPGA's dedicated **DSP48 slices**, ensuring high-performance multiplication.
 
+---
+
 ## 💻 How to Run (Vivado)
 1. Create Project: Open Vivado and create a new RTL Project. Select the xc7a35tcpg236-1 part (or any Artix-7).
 
