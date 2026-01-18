@@ -37,21 +37,6 @@ graph LR
 
 ---
 
-## Directory Structure
-KMeans_Accelerator/
-├── src/
-│   ├── kmeans_top.v        # Top-level controller
-│   ├── distance_unit.v     # Calculates (x-xc)^2 + (y-yc)^2
-│   ├── min_finder.v        # 3-way Comparator logic
-│   └── booth_multiplier.v  # (Optional) Custom multiplier IP
-├── tb/
-│   └── tb_kmeans.v         # Testbench for verification
-├── docs/
-│   ├── KMeans_Technical_Report.pdf
-│   ├── block_diagram.png
-│   └── vivado_schematic.png
-└── README.md
-
 ## 📊 Resource Utilization (Artix-7)
 Synthesized using **Vivado 2025.1** for device `xc7a35tcpg236-1`.
 
@@ -64,19 +49,16 @@ Synthesized using **Vivado 2025.1** for device `xc7a35tcpg236-1`.
 
 *Analysis:* The low LUT utilization (0.5%) indicates massive room for scalability. The design efficiently maps arithmetic to the FPGA's dedicated **DSP48 slices**, ensuring high-performance multiplication.
 
+---
+
 ## 💻 How to Run (Vivado)
-Create Project: Open Vivado and create a new RTL Project. Select the xc7a35tcpg236-1 part (or any Artix-7).
+1. Create Project: Open Vivado and create a new RTL Project. Select the xc7a35tcpg236-1 part (or any Artix-7).
 
-Add Sources: * Add all files from the /src folder as Design Sources.
+2. Add Sources: Add all files from the /src folder as Design Sources.
+                Add tb/tb_kmeans.v as the Simulation Source.
 
-Add tb/tb_kmeans.v as the Simulation Source.
+3. Run Simulation: Click Run Simulation > Run Behavioral Simulation.
+                   Observe the cluster_result signal changing in the waveform viewer.
 
-Run Simulation: * Click Run Simulation > Run Behavioral Simulation.
-
-Observe the cluster_result signal changing in the waveform viewer.
-
-View Hardware:
-
-Click Run Synthesis.
-
-Open Elaborated Design > Schematic to see the parallel hardware structure.
+4. View Hardware: Click Run Synthesis.
+                  Open Elaborated Design > Schematic to see the parallel hardware structure.
