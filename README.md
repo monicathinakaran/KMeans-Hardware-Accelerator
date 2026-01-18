@@ -53,15 +53,10 @@ Synthesized using **Vivado 2025.1** for device `xc7a35tcpg236-1`.
 1. Create Project: Open Vivado and create a new RTL Project. Select the xc7a35tcpg236-1 part (or any Artix-7).
 
 2. Add Sources: Add all files from the /src folder as Design Sources.
-
-Add tb/tb_kmeans.v as the Simulation Source.
+                Add tb/tb_kmeans.v as the Simulation Source.
 
 3. Run Simulation: Click Run Simulation > Run Behavioral Simulation.
+                   Observe the cluster_result signal changing in the waveform viewer.
 
-Observe the cluster_result signal changing in the waveform viewer.
-
-4. View Hardware:
-
-Click Run Synthesis.
-
-Open Elaborated Design > Schematic to see the parallel hardware structure.
+4. View Hardware: Click Run Synthesis.
+                  Open Elaborated Design > Schematic to see the parallel hardware structure.
