@@ -58,7 +58,7 @@ Synthesized using **Vivado 2025.1** for device `xc7a35tcpg236-1`.
 | Resource Type | Used | Available | Utilization % |
 | :--- | :--- | :--- | :--- |
 | **Slice LUTs** (Logic) | 104 | 20,800 | **0.50%** |
-| **DSP48E1** (Multipliers) | 6 | 90 | **6.67%** |
+| **DSPs** (Multipliers) | 6 | 90 | **6.67%** |
 | **Registers** (Flip-Flops) | 3 | 41,600 | **<0.01%** |
 | **Bonded IOB** (Pins) | 38 | 106 | 35.85% |
 
