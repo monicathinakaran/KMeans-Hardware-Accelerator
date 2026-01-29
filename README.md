@@ -1,14 +1,5 @@
 # Custom Hardware Accelerator for K-Means Clustering
 
-![Status](https://img.shields.io/badge/Status-Active-success)
-![Platform](https://img.shields.io/badge/Platform-Xilinx_Vivado-blue)
-![Language](https://img.shields.io/badge/Language-Verilog_HDL-orange)
-
-## 📄 [Read the Full Technical Report (PDF)](docs/KMeans_Technical_Report.pdf)
-*(Contains detailed Schematics, Waveforms, and Design Theory)*
-
----
-
 ## 🚀 Project Overview
 This project implements a dedicated **Hardware Accelerator** for the K-Means clustering algorithm on an FPGA. Unlike general-purpose CPUs that process data sequentially, this design leverages **spatial parallelism** to calculate Euclidean distances for multiple centroids simultaneously.
 
